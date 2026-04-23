@@ -210,7 +210,6 @@
         '<div class="confirmed-box">' +
           '<div class="confirmed-checkmark" aria-hidden="true">✓</div>' +
           '<div class="confirmed-path">' + esc(confirmedPath) + '</div>' +
-          '<div class="confirmed-meta">' + esc(selectedNodeId) + '</div>' +
         '</div>' +
 
         /* Two columns: nav log (left) + Lookback reminder (right) */

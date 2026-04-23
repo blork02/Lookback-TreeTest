@@ -185,43 +185,36 @@ li.has-children.open > .tree-children {
 
 /* ── Confirmed box ───────────────────────────────────────────────────────── */
 .confirmed-box {
-  background: white;
+  background: #f0fdf4;
+  border: 1.5px solid #86efac;
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
-  padding: 2rem 2rem 1.75rem;
-  margin-bottom: 2rem;
+  padding: 0.875rem 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .confirmed-checkmark {
-  width: 3rem;
-  height: 3rem;
+  width: 1.75rem;
+  height: 1.75rem;
   background: #16a34a;
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  margin: 0 auto 1.25rem;
+  font-size: 0.9rem;
   font-weight: 700;
+  flex-shrink: 0;
   line-height: 1;
 }
 
 .confirmed-path {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #111827;
-  text-align: center;
-  margin-bottom: 0.375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #15803d;
   line-height: 1.4;
-}
-
-.confirmed-meta {
-  font-size: 0.75rem;
-  color: #9ca3af;
-  text-align: center;
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-  margin-bottom: 2rem;
 }
 
 /* ── Two-column layout below confirmed box ───────────────────────────────── */
