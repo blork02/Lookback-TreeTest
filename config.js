@@ -13,6 +13,10 @@ const CONFIG = {
       breadcrumbEmpty: 'Aucune catégorie sélectionnée',
       confirmBtn:      'Je soumettrais ma question ici',
       navLogTitle:     'Parcours de navigation',
+      reminderTitle:   'Avant de passer à la suite dans Lookback',
+      reminderIntro:   'Répondez aux 2 questions suivantes :',
+      reminderQ1:      'Sur une échelle de 1 à 5, à quel point étiez-vous confiant(e) dans votre choix ?',
+      reminderQ2:      'Avez-vous des remarques ou suggestions ?',
     },
     nl: {
       appTitle:        'HR-dienst – Navigatietest',
@@ -21,6 +25,10 @@ const CONFIG = {
       breadcrumbEmpty: 'Geen categorie geselecteerd',
       confirmBtn:      'Hier zou ik mijn vraag indienen',
       navLogTitle:     'Navigatieverloop',
+      reminderTitle:   'Voordat u verdergaat in Lookback',
+      reminderIntro:   'Beantwoord de volgende 2 vragen:',
+      reminderQ1:      'Op een schaal van 1 tot 5, hoe zeker was u van uw keuze?',
+      reminderQ2:      'Heeft u opmerkingen of suggesties?',
     }
   },
 

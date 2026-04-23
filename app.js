@@ -174,7 +174,7 @@
     }
   }
 
-  /* ── Screen: confirmed — shows full navigation log ──────────────────────── */
+  /* ── Screen: confirmed — confirmed path + nav log + Lookback reminder ───── */
   function renderConfirmed() {
     var confirmedPath = pathString(selectedNodeId);
 
@@ -205,15 +205,34 @@
     app.innerHTML =
       '<div class="task-page">' +
         '<header class="page-header"><h1>' + esc(t('appTitle')) + '</h1></header>' +
+
+        /* Confirmed answer — full width, always above the fold */
         '<div class="confirmed-box">' +
           '<div class="confirmed-checkmark" aria-hidden="true">✓</div>' +
           '<div class="confirmed-path">' + esc(confirmedPath) + '</div>' +
           '<div class="confirmed-meta">' + esc(selectedNodeId) + '</div>' +
         '</div>' +
-        '<div class="nav-log">' +
-          '<h3 class="nav-log-title">' + esc(t('navLogTitle')) + '</h3>' +
-          logHtml +
+
+        /* Two columns: nav log (left) + Lookback reminder (right) */
+        '<div class="confirmed-columns">' +
+          '<div class="confirmed-col-log">' +
+            '<div class="nav-log">' +
+              '<h3 class="nav-log-title">' + esc(t('navLogTitle')) + '</h3>' +
+              logHtml +
+            '</div>' +
+          '</div>' +
+          '<div class="confirmed-col-reminder">' +
+            '<div class="reminder-box">' +
+              '<div class="reminder-title">' + esc(t('reminderTitle')) + '</div>' +
+              '<p class="reminder-intro">' + esc(t('reminderIntro')) + '</p>' +
+              '<ol class="reminder-questions">' +
+                '<li>' + esc(t('reminderQ1')) + '</li>' +
+                '<li>' + esc(t('reminderQ2')) + '</li>' +
+              '</ol>' +
+            '</div>' +
+          '</div>' +
         '</div>' +
+
       '</div>';
   }
 
